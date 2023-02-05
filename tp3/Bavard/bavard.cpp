@@ -33,35 +33,6 @@ void Bavarde::afficher(){
     cout << "Affichage de %" << '\n';
 }
 
-Couple::Couple(){
-    cout << "Construction de " << b1.getA() << " et " << b2.getA() << '\n';
-}
-
-Couple::Couple(Bavarde b, Bavarde b0){
-    cout << "Construction de " << b.getA() << " et " << b0.getA() << '\n';
-}
-
-Couple::~Couple(){
-    cout << "Destruction de couple \n";
-    b1.~Bavarde();
-    b2.~Bavarde();
-}
-
-Famille::Famille(){
-    tab = new Bavarde[TAILLE];
-    //tab = (Bavarde *) malloc(TAILLE*sizeof(Bavarde));
-}
-
-Famille::Famille(int nb){
-    tab = new Bavarde[nb];
-    //tab = (Bavarde *) malloc(nb*sizeof(Bavarde));
-}
-
-Famille::~Famille(){
-    //free(tab);
-    delete [] tab;
-}
-
 void fonction (Bavarde b){
     cout << b.getA() << '\n';
 }

@@ -1,4 +1,6 @@
 #include "bavard.hpp"
+#include "couple.hpp"
+#include "famille.hpp"
 
 using std::cout;
 using std::endl;

@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -Wall -Wextra -Werror -g
 TARGET =  main
-SOURCES = bavard.cpp main.cpp 
+SOURCES = bavard.cpp couple.cpp famille.cpp main.cpp 
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(TARGET)
