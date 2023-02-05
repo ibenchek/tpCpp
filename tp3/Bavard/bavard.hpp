@@ -20,12 +20,12 @@ class Bavarde{
 };
 
 class Couple{
-    Bavarde b1();
-    Bavarde b2();
+    Bavarde b1;
+    Bavarde b2;
 
     public :
         Couple();
-        Couple(int, int);
+        Couple(Bavarde, Bavarde);
         ~Couple();
 };
 

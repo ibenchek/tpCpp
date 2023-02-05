@@ -25,7 +25,11 @@ int main(int, char **){
 */
 
 int main(int, char **){
+    Bavarde ba(2);
+    Bavarde baa(1);
+    
     Couple c1();
+    Couple c2(ba,baa);
 
     return 0;
 }

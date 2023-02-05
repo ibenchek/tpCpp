@@ -35,18 +35,17 @@ void Bavarde::afficher(){
 }
 
 Couple::Couple(){
-    b1().setA(b1().getA());
-    b2().setA(b2().getA());
+    cout << "Construction de " << b1.getA() << " et " << b2.getA() << '\n';
 }
 
-Couple::Couple(int a1, int a2){
-    b1().setA(a1);
-    b2().setA(a2);
+Couple::Couple(Bavarde b, Bavarde b0){
+    cout << "Construction de " << b.getA() << " et " << b0.getA() << '\n';
 }
 
 Couple::~Couple(){
-    b1().~Bavarde();
-    b2().~Bavarde();
+    cout << "Destruction de couple \n";
+    b1.~Bavarde();
+    b2.~Bavarde();
 }
 
 void fonction (Bavarde b){
