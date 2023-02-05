@@ -1,10 +1,10 @@
-#include <iostream>
 #include "bavard.hpp"
 
 using std::cout;
 using std::endl;
 
 /*
+// Tableau verbeux
 int main(int, char **){
     const int TAILLE = 20;
     {
@@ -22,8 +22,8 @@ int main(int, char **){
 
     return 0;
 }
-*/
 
+// Objet complexe : un couple
 int main(int, char **){
     Bavarde ba(2);
     Bavarde baa(1);
@@ -32,4 +32,11 @@ int main(int, char **){
     Couple c2(ba,baa);
 
     return 0;
+}
+*/
+
+// Objet complexe : une famille nombreuse
+int main(int, char **){
+    Famille f1{};
+    Famille f2{3};
 }

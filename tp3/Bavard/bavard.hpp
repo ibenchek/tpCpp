@@ -1,5 +1,9 @@
 #ifndef BAVARD_HPP
 #define BAVARD_HPP
+#define TAILLE 5
+
+#include <cstdlib>
+#include <iostream>
 
 extern int cptc;
 extern int cptd;
@@ -27,6 +31,15 @@ class Couple{
         Couple();
         Couple(Bavarde, Bavarde);
         ~Couple();
+};
+
+class Famille{
+    Bavarde * tab;
+
+    public : 
+        Famille();
+        Famille(int);
+        ~Famille();
 };
 
 void fonction(Bavarde);
