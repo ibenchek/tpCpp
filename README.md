@@ -1,4 +1,3 @@
-# TP Cpp
+# TP C++
 
-tp de C++ ZZ2
-https://perso.isima.fr/loic/index.fr.php
+Enoncé de tp de C++ ZZ2 sur le site : https://perso.isima.fr/loic/index.fr.php
