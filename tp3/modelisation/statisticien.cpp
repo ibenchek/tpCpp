@@ -12,7 +12,6 @@ Statisticien::Statisticien(bool state){
 }
 
 Statisticien::~Statisticien(){
-
 }
 
 bool Statisticien::aCalcule(){

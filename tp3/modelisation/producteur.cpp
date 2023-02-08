@@ -32,9 +32,11 @@ void Producteur::produire(int quantite, string nom) {
     ofstream fichier(nom.c_str());
 
     if (!fichier.fail()){
-        fichier << quantite; 
+        fichier << quantite;
+        fichier << '\n'; 
         for (int i = 0; i < quantite; ++i){
             fichier << i+1;
+            fichier << '\n';
         }
     }
     fichier.close();
