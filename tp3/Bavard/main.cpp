@@ -35,10 +35,39 @@ int main(int, char **){
 
     return 0;
 }
-*/
 
 // Objet complexe : une famille nombreuse
 int main(int, char **){
     Famille f1{};
     Famille f2{3};
+
+    return 0;
 }
+*/
+
+// Petite Verification
+int main(int, char **){
+    Bavarde b1{};
+    Bavarde b2{5};
+    Bavarde b3{4};
+    Bavarde b6{1};
+
+    Bavarde & b4 = b6;
+
+    Bavarde * b5 = new Bavarde;
+
+    test1(b1);
+
+    b2 = test2a();
+
+    b3 = test2b();
+
+    test3(b4);
+
+    test4(b5);
+
+    delete b5;
+
+    return 0;
+}
+

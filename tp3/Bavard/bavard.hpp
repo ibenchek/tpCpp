@@ -24,4 +24,10 @@ class Bavarde{
 
 void fonction(Bavarde);
 
+void test1(Bavarde);
+Bavarde test2a();
+Bavarde test2b();
+void test3(Bavarde &);
+void test4(Bavarde *);
+
 #endif

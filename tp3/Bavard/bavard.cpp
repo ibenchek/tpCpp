@@ -37,3 +37,28 @@ void fonction (Bavarde b){
     cout << b.getA() << '\n';
 }
 
+void test1(Bavarde b){
+    cout << "appel de la fonction avec parametre objet et copie : " << b.getA() << '\n';
+    
+}
+
+Bavarde test2a(){
+    cout << "appel de la fonction avec retour.\n";
+
+    return Bavarde{};
+}
+
+Bavarde test2b(){
+    Bavarde b{};
+    cout << "appel de la fonction avec retour.\n";
+
+    return b;
+}
+
+void test3(Bavarde & b){
+    cout << "appel de la fonction avec reference : " << b.getA() << '\n';
+}
+
+void test4(Bavarde * b){
+    cout << "appel de la fonction avec un pointeur sur un objet : " << b->getA() << '\n';
+}
