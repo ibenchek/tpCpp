@@ -36,7 +36,7 @@ class Forme {
         void setX(int);
         void setY(int);
 
-        Point getPoint();
+        Point& getPoint();
 
         COULEURS getCouleur();
         void setCouleur(COULEURS);

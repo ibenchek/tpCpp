@@ -69,7 +69,7 @@ void Forme::setY(int b){
     p.setY(b);
 }
 
-Point Forme::getPoint(){
+Point& Forme::getPoint(){
     return p;
 }
 

@@ -48,7 +48,7 @@ int Cercle::getRayon(){
 }
 
 int Cercle::getLargeur(){
-    return
+    return h;
 }
 
 string Cercle::toString(){

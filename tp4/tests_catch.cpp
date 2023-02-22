@@ -91,8 +91,8 @@ TEST_CASE("Instanciation3", "[Forme]") {
 	f2.getPoint().setX(15);
 	f2.getPoint().setY(25);
 	f2.setCouleur(COULEURS::JAUNE);
-	//REQUIRE (f2.getPoint().getX() == 15);
-	//REQUIRE (f2.getPoint().getY() == 25);
+	REQUIRE (f2.getPoint().getX() == 15);
+	REQUIRE (f2.getPoint().getY() == 25);
 	REQUIRE (f2.getCouleur() == COULEURS::JAUNE);
 	REQUIRE_FALSE (f2.getCouleur() == COULEURS::BLEU);
 	REQUIRE_FALSE (f2.getCouleur() == COULEURS::ROUGE);
