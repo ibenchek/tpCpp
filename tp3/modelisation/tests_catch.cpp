@@ -41,7 +41,7 @@ TEST_CASE("Producteur_Travail3") {
       }
     
     REQUIRE(i == DEMANDE);
-    // CHECK(fichier.eof());
+    CHECK(fichier.eof());
     fichier.close();
 
     REQUIRE(p.getTravail() == 1);

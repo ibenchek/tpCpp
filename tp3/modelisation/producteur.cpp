@@ -34,10 +34,11 @@ void Producteur::produire(int quantite, string nom) {
     if (!fichier.fail()){
         fichier << quantite;
         fichier << '\n'; 
-        for (int i = 0; i < quantite; ++i){
+        for (int i = 0; i < quantite-1; ++i){
             fichier << i+1;
             fichier << '\n';
         }
+        fichier << quantite;
     }
     fichier.close();
 }
