@@ -22,6 +22,16 @@ Vecteur::Vecteur(const Vecteur& other){
     std::copy(other.data, other.data + taille, data);
 }
 
+Vecteur& Vecteur::operator=(const Vecteur &other){
+    if (this != &other){
+        taille = other.taille;
+        capacite = other.capacite;
+        delete [] data;
+        data = new double[capacite];
+        std::memcpy(data, other.data, taille*sizeof(double));   
+    }
+}
+
 Vecteur::~Vecteur(){
     delete [] data;
 }

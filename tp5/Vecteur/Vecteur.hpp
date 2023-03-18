@@ -15,11 +15,11 @@ class Vecteur  {
     Vecteur(const Vecteur &);
     ~Vecteur();
 
+    Vecteur& operator=(const Vecteur& other);
+
     int capacity() const;
     int size() const;
     void push_back(double value);
 };
-
- 
 
 #endif
