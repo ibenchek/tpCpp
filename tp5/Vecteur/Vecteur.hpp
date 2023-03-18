@@ -7,12 +7,17 @@
 class Vecteur  {
     double * data;
     int capacite;
-    int size;
+    int taille;
 
     public :
-    Vecteur(int init_capacite = 10);
-    Vecteur(const Vecteur & other);
+    Vecteur();
+    Vecteur(int);
+    Vecteur(const Vecteur &);
     ~Vecteur();
+
+    int capacity() const;
+    int size() const;
+    void push_back(double value);
 };
 
  
